@@ -1,0 +1,284 @@
+*{
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+}
+
+@keyframes runslider {
+    from{
+        transform: translateX(0);
+    }to{
+        transform: translateX(calc(-165px*6));
+    }
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tsumilogo{
+    display: flex;
+}
+
+.tsumilogo h1{
+    display: flex;
+    align-items: center;
+    font-style: italic;
+    font-size: 1.3em;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 18%;
+    align-items: center;
+    padding-right: 5%;
+}
+
+.active{
+    border-bottom:solid 4px rgb(139, 23, 52);
+    cursor: default;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar a:hover{
+    border-bottom: #f8a39d solid 4px;
+}
+
+.hero{
+    background:url(/img/ephemeral.png), url(/img/chandelier.png)770px;
+    background-repeat: no-repeat;
+    height: 766px;
+    background-size: 771px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.title h1{
+    font-size: 3em;
+}
+
+.title p{
+    font-size: 2em;
+    font-style: italic;
+}
+
+.title{
+    background-color:rgba(0, 0, 0, 0.183);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: default;
+    backdrop-filter: blur(5px);
+}
+
+.maintitle{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom:100px ;
+}
+
+.maintitle h2{
+    display: flex;
+    justify-content: center;
+    font-size: 2.5em;
+    position: relative;
+}
+
+.maintitle h2::before{
+    content: "";
+    display: block;
+    width: 300px;
+    border-top: #f8a39d 5px solid;
+    display: block;
+    position: absolute;
+    bottom: 50px;
+}
+
+.mainland{
+    margin: 0 10% 10% 10%;
+}
+
+.intodraw, .rootsofdraw, .inthefuture, .dontdraw{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5%;
+}
+
+.intodraw div,.rootsofdraw div, .inthefuture div, .dontdraw div {
+    width: 50%;
+    display: flex;
+    flex-direction:column;
+    gap:5%;
+    justify-content: center;
+}
+
+.intodraw div h3,.rootsofdraw div h3, .inthefuture div h3, .dontdraw div h3 {
+    font-size: 2.4em;
+}
+
+.intodraw div p,.rootsofdraw div p, .inthefuture div p, .dontdraw div p{
+    font-size: 1.2em;
+    line-height:1.32em;
+} 
+
+.thegal{
+    margin-top: 100px;
+}
+
+.thegal div:nth-child(1){
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.thegal div:nth-child(1) h2{
+    display: flex;
+    justify-content: center;
+    font-size: 2.5em;
+    position: relative;
+}
+
+.thegal div:nth-child(1) h2::before{
+    content: "";
+    width: 300px;
+    border-top: #f8a39d 4px solid;
+    display: block;
+    position: absolute;
+    bottom: 45px;
+}
+
+.container>img{
+    width: 25vw;
+    height:50vh;
+    border-radius: 11px;
+    object-fit:fill;
+    transition: 3s;
+}
+
+.container>img:hover{
+    transform: scale(1.05);
+
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    column-gap: 1%;
+    height: 1250px;
+    align-items: center;
+    justify-content:center;
+}
+
+.itemra{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+}
+
+.itemsm{
+    grid-column-start:2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+}
+
+.itemcu{
+    grid-column-start:3;
+    grid-column-end: 6;
+    grid-row-start: 1;
+}
+
+.itemel{
+    grid-column-start:1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+}
+
+.itemoor{
+    grid-column-start:2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+} 
+
+.itemus{
+    grid-column-start:3;
+    grid-column-end: 6;
+    grid-row-start: 2;
+}
+
+.itemme{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+} 
+
+.itemwer{
+    grid-column-start:2;
+    grid-column-end: 5;
+    grid-row-start: 3;
+} 
+
+.itemmi{
+    grid-column-start:3;
+    grid-column-end: 6;
+    grid-row-start: 3;
+} 
+
+.digitart h3, .pncil h3{
+    font-size: 2em;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.digitart h3::after, .pncil h3::after{
+    content: "";
+    display: block;
+    width: 50px;
+    border-bottom: #f8a39d 4px solid;
+    display: block;
+    position: absolute;
+    left: 0;
+
+}
+
+.digitart{
+    margin-top: 70px;
+}
+
+
+.icon{
+    display: flex;
+    justify-content: center;
+    gap: 15%;
+}
+
+footer{
+    background-color:#f8a39d;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 3% 0 3% 0;
+}
+
+.copy{
+    margin:15px 0 0px 0;
+    padding-left:19% ;
+}
+
+.linkin{
+    display: flex;
+    gap: 5%;
+    width: 100%;
+    justify-content: space-around;
+}
