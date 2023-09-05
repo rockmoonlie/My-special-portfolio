@@ -78,7 +78,7 @@ header{
     flex-direction: column;
     justify-content: center;
     cursor: default;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(3px);
 }
 
 .maintitle{
