@@ -51,7 +51,7 @@ header{
 }
 
 .hero{
-    background:url(/img/ephemeral.png), url(/img/chandelier.png)770px;
+    background:url(../img/ephemeral.png), url(../img/chandelier.png)770px;
     background-repeat: no-repeat;
     height: 766px;
     background-size: 771px;
